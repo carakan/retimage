@@ -1,0 +1,112 @@
+img.logo1{
+    height: 28px;
+    margin-top: 5px;
+}
+img.logo2{
+    height: 24px;
+    margin-left: 6px;
+}
+h1.logo, h1 fieldset, h1 fieldset div{
+    overflow: visible !important;
+}
+h1 fieldset{
+    /* margin-left:-50px*/
+}
+div.title{
+    color: #017DA1;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+body{
+    background-image: url('../img/novartis_symbol.png') !important;
+    background-position: 50% 50% !important;
+    background-repeat: no-repeat no-repeat !important;
+}
+div[data-role="page"]{
+    background-color: transparent !important;
+    background-image: none !important;
+}
+div[data-role="content"]{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    /*font-weight: bold;*/
+    text-align: justify;
+}
+.concurso-botones span{
+    font-size: 12px;
+}
+#page-splash{
+    text-align:center;
+    background-color: #fff !important;
+}
+
+.center-wrapper {
+    text-align: center;
+}
+.center-wrapper * {
+    margin: 0 auto;
+}
+
+.title-collapsible-1{
+    white-space:normal !important;
+    word-wrap:break-word !important;
+}
+.title-collapsible-2{
+    white-space:normal !important;
+    word-wrap:break-word !important;
+    font-size: 11px !important;
+}
+.title-collapsible-3{
+    white-space:normal !important;
+    word-wrap:break-word !important;
+    font-size: 12px !important;
+    color:#4277A7;
+}
+img.mob-img{
+    width:100%
+}
+.doctor{
+    font-size: 12px;
+}
+.mensaje{
+    color:#467CAB;
+    font-style: italic;
+    white-space:normal !important;
+    word-wrap:break-word !important;
+}
+.foto{
+    margin-left: 6px;
+    margin-top: 6px;
+}
+.a-doctor{
+    padding-left: 76px !important;
+    padding-right: 28px !important;
+    padding-bottom: 7px !important;
+    padding-top: 9px !important;
+}
+.a-doctor p {
+    font-size: 11px;
+}
+fieldset div.ui-block-a{
+    width:39% !important;
+}
+
+fieldset div.ui-block-b{
+    width:61% !important;
+}
+
+body.black{
+    background-color: #000;
+    background-image: none !important;
+    overflow: hidden !important;
+
+}
+body.black div[data-role="content"]{
+    text-shadow: none !important;
+    color: #000 !important;
+}

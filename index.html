@@ -1,0 +1,939 @@
+<!doctype html>
+<html>
+<head>
+    <title>Novartis</title>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, user-scalable=no " > <!-- content="width=device-width, user-scalable=no "                 initial-scale=1-->
+
+    <script src="js/jquery-2.1.0.min.js"></script>
+    <script src="js/jqm/jquery.mobile-1.3.2.min.js"></script>
+    <script src="phonegap.js"></script>
+    <script src="js/main.js"></script>
+
+    <link rel="stylesheet" href="js/jqm/jquery.mobile-1.3.2.min.css"/>
+    <link rel="stylesheet" href="css/style.css" />
+
+
+
+</head>
+
+<body>
+
+<div data-role="page" id="page-splash">
+    <a href="#page-home-directores" data-transition="flip">
+        <img id="splash" src="img/splash.png" />
+    </a>
+</div>
+
+
+
+<div data-role="page" id="page-home-directores" >
+    <div data-role="header" data-position="fixed" data-id="fixed" data-theme="c">
+        <a href="#page-home-directores" data-icon="home" data-iconpos="notext" data-theme="b"></a>
+        <h1 class="logo">
+            <div data-role="header" data-position="fixed" data-theme="f">
+                <div class="center-wrapper">
+                    <img class="logo1" src="img/logo.png" alt="Header" />
+                    <img class="logo2" src="img/logo2.png" alt="Header" />
+                </div>
+            </div>
+        </h1>
+        <!--<a href="#page-buscar" data-icon="search" data-iconpos="notext" data-theme="b"></a>-->
+    </div>
+    <div class="title" data-id="fixed">
+        ATLAS ICONOGRÁFICO DE LAS ENFERMEDADES RETINIANAS Y DEL NERVIO ÓPTICO
+    </div>
+    <div data-role="content">
+        <fieldset class="ui-grid-a">
+            <div class="ui-block-a">
+                <a href="#page-home-patologias" data-role="button" data-theme="b" data-mini="true">Patologías</a>
+            </div>
+            <div class="ui-block-b">
+                <a href="#" data-role="button" class="ui-btn-down-c" data-theme="b" data-mini="true">Directores Científicos</a>
+            </div>
+        </fieldset>
+        <br/><br/>
+        <ul data-role="listview" data-split-icon="gear" data-split-theme="d">
+            <li >
+                <a href="mailto:jdonate@med.mira-soluciones.com?subject=Consulta" class="a-doctor"> <!-- jdonate@med.mira-soluciones.com -->
+                    <img src="img/3.png" class="foto" />
+                    <p class="title-collapsible-1"><u><b>Retinopatía diabética</b></u></p>
+                    <p class="title-collapsible-1">
+                        <b class="doctor">Dr. Juan Donate López, MD</b><br/>
+                        Unidad de Retina. Hospital Clínico San Carlos.<br/>
+                        Jefe de Unidad de Retina. Clínica de la Luz.<br/>
+                        Madrid. España
+                    </p>
+
+                </a>
+
+            </li>
+            <li>
+                <a href="mailto:rgallego@med.mira-soluciones.com?subject=Consulta" class="a-doctor">
+                    <img src="img/1.png" class="foto"  /> <!-- "mailto:rgallego@med.mira-soluciones.com?subject=Consulta" -->
+                    <p class="title-collapsible-1"><u><b>Degeneración macular asociada a la edad</b></u></p>
+                    <p class="title-collapsible-1">
+                        <b class="doctor">Dr. Roberto Gallego Pinazo, MD, Phd y DiSSO</b><br/>
+                        Dra. Rosa Dolz-Marco<br/>
+                        Unidad de Mácula. Servicio de Oftalmología. <br/>
+                        Hospital Universitario y Politécnico La Fe.<br/>
+                        Valencia. España
+                    </p>
+                    <!--<p class="mensaje">Sección operativa en la siguiente actualización</p>-->
+                </a>
+                <!--<a href="#" data-rel="dialog" data-transition="slideup">Purchase album </a>-->
+            </li>
+            <li>
+                <a href="mailto:llguajardo@med.mira-soluciones.com?subject=Consulta" data-rel="popup" class="a-doctor">
+                    <img src="img/2.png"  class="foto" /> <!-- mailto:llguajardo@med.mira-soluciones.com?subject=Consulta   -->
+                    <p class="title-collapsible-1"><u><b>Obstrucción venosa retiniana</b></u></p>
+                    <p class="title-collapsible-1">
+                        <b class="doctor">Dr. Lorenzo López Guajardo, MD, PhD</b><br/>
+                        Profesor Asociado de Oftalmología. Facultad de Medicina.<br/>
+                        Universidad de Alcalá. Alcalá de Henares. <br/>
+                        Madrid. España
+                    </p>
+                    <!--<p class="mensaje">Sección operativa en la siguiente actualización</p>-->
+                </a>
+
+            </li>
+        </ul>
+
+    </div>
+    <div data-role="popup" id="popupBasic2" data-theme="e" data-overlay-theme="a">
+        <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+        <p>Sección operativa en la siguiente actualización</p>
+    </div>
+    <div data-role="footer" data-position="fixed" data-id="fixed" data-theme="c" >
+        <div class="ui-grid-solo">
+            <a href="#page-concurso" data-role="button" data-transition="slideup" data-theme="b" >CONCURSO ENVÍA TU CASO CLÍNICO</a>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="page-home-patologias" >
+    <div data-role="header" data-position="fixed" data-id="fixed" data-theme="c"> <a href="#page-home-directores" data-icon="home" data-iconpos="notext" data-theme="b"></a> <div class="center-wrapper"> <img class="logo1" src="img/logo.png" alt="Header" />  <img class="logo2" src="img/logo2.png" alt="Header" />  </div>  </div>
+    <div class="title" data-id="fixed"> ATLAS ICONOGRÁFICO DE LAS ENFERMEDADES RETINIANAS Y DEL NERVIO ÓPTICO </div>
+    <div data-role="content"> <fieldset class="ui-grid-a">  <div class="ui-block-a"> <a href="#" data-role="button" class="ui-btn-down-c" data-theme="b" data-mini="true">Patologías</a>  </div>  <div class="ui-block-b"> <a href="#page-home-directores" data-role="button" data-theme="b" data-mini="true">Directores Científicos</a> </div> </fieldset>
+
+    <a href="#page-home-patologias-1" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+        <div class="title-collapsible-1" >Retinopatía diabética</div>
+    </a>
+    <a href="#page-deg" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+        <div class="title-collapsible-1" >Degeneración macular asociada a la edad</div>
+    </a>
+    <a href="#page-obs" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+        <div class="title-collapsible-1" >Obstrucción venosa retiniana</div>
+    </a>
+        <div data-role="popup" id="popupBasic" data-theme="e" data-overlay-theme="a">
+            <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+            <p>Sección operativa en la siguiente actualización</p>
+        </div>
+
+
+    </div>  <div data-role="footer" data-position="fixed" data-id="fixed" data-theme="c" > <div class="ui-grid-solo"> <a href="#page-concurso" data-role="button" data-transition="slideup" data-theme="b" >CONCURSO ENVÍA TU CASO CLÍNICO</a> </div> </div>
+</div>
+
+<!--
+
+Obstrucción de rama venosa en retina
+
+ÍNDICE
+
+1) Introducción
+2) Fisiopatología
+3) Clínica
+4) Historia natural de las complicaciones
+    A.	Edema Macular
+        •	Edema macular no isquémico
+        •	Edema macular isquémico
+    B.	Neovascularización
+5) Estudio clínico. Diagnóstico. AFG
+6) Tratamiento
+    A.	Tratamiento con laser: El BVOS
+        •	Edema macular
+        •	Neovascularización.
+    B.	Tratamiento con anti VEGF (Ranibizumab- BRAVO)
+    C.	Tratamiento con corticoides
+    D.	Combinación Ranibizumab-corticoide
+    E.	Cirugía
+
+
+-->
+
+<div data-role="page" id="page-obs" > <!-- PAGINA 3 -->
+    <div data-role="header" data-position="fixed" data-id="fixed" data-theme="c"> <a href="#page-home-directores" data-icon="home" data-iconpos="notext" data-theme="b"></a> <div class="center-wrapper"> <img class="logo1" src="img/logo.png" alt="Header" />  <img class="logo2" src="img/logo2.png" alt="Header" />  </div>  </div>
+    <div class="title" data-id="fixed">Obstrucción venosa retiniana</div>
+    <div data-role="content"> <fieldset class="ui-grid-a">  <div class="ui-block-a"> <a href="#" data-role="button" class="ui-btn-down-c" data-theme="b" data-mini="true">Patologías</a>  </div>  <div class="ui-block-b"> <a href="#page-home-directores" data-role="button" data-theme="b" data-mini="true">Directores Científicos</a> </div> </fieldset>
+
+        <a href="#page-obs-v" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >Obstrucción de la vena central de la retina</div>
+        </a>
+        <a href="#page-obs-r" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >Obstrucción de rama venosa en retina</div>
+        </a>
+
+    </div>  <div data-role="footer" data-position="fixed" data-id="fixed" data-theme="c"> <div class="ui-grid-solo"  > <a data-rel="back" data-role="button" data-icon="arrow-l" data-iconpos="left" data-theme="c" data-mini="true" >Atrás</a> </div> </div>
+</div>
+
+<div data-role="page" id="page-obs-r" >
+    <div data-role="header" data-position="fixed" data-id="fixed" data-theme="c"> <a href="#page-home-directores" data-icon="home" data-iconpos="notext" data-theme="b"></a> <div class="center-wrapper"> <img class="logo1" src="img/logo.png" alt="Header" />  <img class="logo2" src="img/logo2.png" alt="Header" />  </div>  </div>
+    <div class="title" data-id="fixed">Obstrucción de rama venosa en retina</div>
+    <div data-role="content"> <fieldset class="ui-grid-a">  <div class="ui-block-a"> <a href="#" data-role="button" class="ui-btn-down-c" data-theme="b" data-mini="true">Patologías</a>  </div>  <div class="ui-block-b"> <a href="#page-home-directores" data-role="button" data-theme="b" data-mini="true">Directores Científicos</a> </div> </fieldset>
+
+        <a href="content/part3/content2.html#page-1" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >Introducción</div>
+        </a>
+        <a href="content/part3/content2.html#page-2" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >Fisiopatología</div>
+        </a>
+        <a href="content/part3/content2.html#page-3" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >Clínica</div>
+        </a>
+        <a href="#page-obs-r-historia" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >Historia natural de las complicaciones</div>
+        </a>
+        <a href="content/part3/content2.html#page-4" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >Estudio clínico. Diagnóstico. AFG</div>
+        </a>
+        <a href="#page-obs-r-tratamiento" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >Tratamiento</div>
+        </a>
+    </div>  <div data-role="footer" data-position="fixed" data-id="fixed" data-theme="c"> <div class="ui-grid-solo"  > <a data-rel="back" data-role="button" data-icon="arrow-l" data-iconpos="left" data-theme="c" data-mini="true" >Atrás</a> </div> </div>
+</div>
+
+
+<div data-role="page" id="page-obs-r-historia" >
+    <div data-role="header" data-position="fixed" data-id="fixed" data-theme="c"> <a href="#page-home-directores" data-icon="home" data-iconpos="notext" data-theme="b"></a> <div class="center-wrapper"> <img class="logo1" src="img/logo.png" alt="Header" />  <img class="logo2" src="img/logo2.png" alt="Header" />  </div>  </div>
+    <div class="title" data-id="fixed">Historia natural de las complicaciones</div>
+    <div data-role="content"> <fieldset class="ui-grid-a">  <div class="ui-block-a"> <a href="#" data-role="button" class="ui-btn-down-c" data-theme="b" data-mini="true">Patologías</a>  </div>  <div class="ui-block-b"> <a href="#page-home-directores" data-role="button" data-theme="b" data-mini="true">Directores Científicos</a> </div> </fieldset>
+
+        <div class="ui-body ui-body-d" style="margin-top:5px;text-align: left;" >
+            Las dos complicaciones más frecuentes que provocan disminución de AV son: edema macular y hemorragia vítrea por neovascularización.<br>
+            En el periodo agudo (3-6 m) suelen existir abundantes hemorragias intrarretinianas que impiden la correcta interpretación de la AFG e incluso la presencia de hemorragias sobre la fóvea puede ser causa en sí misma de disminución de AV. Tras este periodo podremos estudiar con mayor rentabilidad la aparición de las complicaciones propias del cuadro.
+        </div>
+        <a href="#page-obs-r-historia-edema" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >Edema Macular</div>
+        </a>
+        <a href="content/part3/content2.html#page-5" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >Neovascularización</div>
+        </a>
+
+    </div>  <div data-role="footer" data-position="fixed" data-id="fixed" data-theme="c"> <div class="ui-grid-solo"  > <a data-rel="back" data-role="button" data-icon="arrow-l" data-iconpos="left" data-theme="c" data-mini="true" >Atrás</a> </div> </div>
+</div>
+
+
+<div data-role="page" id="page-obs-r-historia-edema">
+    <div data-role="header" data-position="fixed" data-id="fixed" data-theme="c"> <a href="#page-home-directores" data-icon="home" data-iconpos="notext" data-theme="b"></a> <div class="center-wrapper"> <img class="logo1" src="img/logo.png" alt="Header" />  <img class="logo2" src="img/logo2.png" alt="Header" />  </div>  </div>
+    <div class="title" data-id="fixed">Edema Macular</div>
+    <div data-role="content"> <fieldset class="ui-grid-a">  <div class="ui-block-a"> <a href="#" data-role="button" class="ui-btn-down-c" data-theme="b" data-mini="true">Patologías</a>  </div>  <div class="ui-block-b"> <a href="#page-home-directores" data-role="button" data-theme="b" data-mini="true">Directores Científicos</a> </div> </fieldset>
+
+        <!-- <a href="content/part3/content2.html#page-13" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >Introducción</div>
+        </a> -->
+        <div class="ui-body ui-body-d" style="margin-top:5px;text-align: left;" >
+            El edema macular se determina por la presencia de engrosamiento retiniano en la biomicroscopía mácula/OCT, pero atendiendo al estudio angiográfico podemos 	encontrar dos tipos:
+        </div>
+
+        <a href="content/part3/content2.html#page-6" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >Edema macular no isquémico</div>
+        </a>
+        <a href="content/part3/content2.html#page-7" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >Edema macular isquémico</div>
+        </a>
+        <!--<a href="content/part3/content2.html#page-12" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >OVCR indeterminada</div>
+        </a>-->
+
+
+    </div>  <div data-role="footer" data-position="fixed" data-id="fixed" data-theme="c"> <div class="ui-grid-solo"  > <a data-rel="back" data-role="button" data-icon="arrow-l" data-iconpos="left" data-theme="c" data-mini="true" >Atrás</a> </div> </div>
+</div>
+
+
+
+<div data-role="page" id="page-obs-r-tratamiento" >
+    <div data-role="header" data-position="fixed" data-id="fixed" data-theme="c"> <a href="#page-home-directores" data-icon="home" data-iconpos="notext" data-theme="b"></a> <div class="center-wrapper"> <img class="logo1" src="img/logo.png" alt="Header" />  <img class="logo2" src="img/logo2.png" alt="Header" />  </div>  </div>
+    <div class="title" data-id="fixed">Tratamiento</div>
+    <div data-role="content"> <fieldset class="ui-grid-a">  <div class="ui-block-a"> <a href="#" data-role="button" class="ui-btn-down-c" data-theme="b" data-mini="true">Patologías</a>  </div>  <div class="ui-block-b"> <a href="#page-home-directores" data-role="button" data-theme="b" data-mini="true">Directores Científicos</a> </div> </fieldset>
+
+        <a href="#page-obs-r-tratamiento-laser" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >Tratamiento con láser: El BVOS</div>
+        </a>
+        <a href="content/part3/content2.html#page-8" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >Tratamiento con anti VEGF (Ranibizumab- BRAVO)</div>
+        </a>
+        <a href="content/part3/content2.html#page-9" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >Tratamiento con corticoides</div>
+        </a>
+
+        <a href="content/part3/content2.html#page-10" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >Combinación Ranibizumab-corticoide</div>
+        </a>
+
+        <a href="content/part3/content2.html#page-11" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >Cirugía</div>
+        </a>
+
+
+    </div>  <div data-role="footer" data-position="fixed" data-id="fixed" data-theme="c"> <div class="ui-grid-solo"  > <a data-rel="back" data-role="button" data-icon="arrow-l" data-iconpos="left" data-theme="c" data-mini="true" >Atrás</a> </div> </div>
+</div>
+
+
+
+<div data-role="page" id="page-obs-r-tratamiento-laser" >
+    <div data-role="header" data-position="fixed" data-id="fixed" data-theme="c"> <a href="#page-home-directores" data-icon="home" data-iconpos="notext" data-theme="b"></a> <div class="center-wrapper"> <img class="logo1" src="img/logo.png" alt="Header" />  <img class="logo2" src="img/logo2.png" alt="Header" />  </div>  </div>
+    <div class="title" data-id="fixed">Tratamiento con láser: El BVOS</div>
+    <div data-role="content"> <fieldset class="ui-grid-a">  <div class="ui-block-a"> <a href="#" data-role="button" class="ui-btn-down-c" data-theme="b" data-mini="true">Patologías</a>  </div>  <div class="ui-block-b"> <a href="#page-home-directores" data-role="button" data-theme="b" data-mini="true">Directores Científicos</a> </div> </fieldset>
+
+        <div class="ui-body ui-body-d" style="margin-top:5px;text-align: left;" >
+            El Branch Vein Occlusion Study -BVOS- es un ensayo clínico multicéntrico, randomizado y controlado que estableció las pautas del tratamiento con láser de las complicaciones 	de la ORVR.
+        </div>
+
+        <a href="content/part3/content2.html#page-12" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >Edema macular</div>
+        </a>
+        <a href="content/part3/content2.html#page-13" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >Neovascularización</div>
+        </a>
+
+
+
+    </div>  <div data-role="footer" data-position="fixed" data-id="fixed" data-theme="c"> <div class="ui-grid-solo"  > <a data-rel="back" data-role="button" data-icon="arrow-l" data-iconpos="left" data-theme="c" data-mini="true" >Atrás</a> </div> </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div data-role="page" id="page-obs-v" >
+    <div data-role="header" data-position="fixed" data-id="fixed" data-theme="c"> <a href="#page-home-directores" data-icon="home" data-iconpos="notext" data-theme="b"></a> <div class="center-wrapper"> <img class="logo1" src="img/logo.png" alt="Header" />  <img class="logo2" src="img/logo2.png" alt="Header" />  </div>  </div>
+    <div class="title" data-id="fixed">Obstrucción de la vena central de la retina</div>
+    <div data-role="content"> <fieldset class="ui-grid-a">  <div class="ui-block-a"> <a href="#" data-role="button" class="ui-btn-down-c" data-theme="b" data-mini="true">Patologías</a>  </div>  <div class="ui-block-b"> <a href="#page-home-directores" data-role="button" data-theme="b" data-mini="true">Directores Científicos</a> </div> </fieldset>
+
+        <a href="content/part3/content.html#page-1" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >Introducción</div>
+        </a>
+        <a href="content/part3/content.html#page-2" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >Etiopatogenia</div>
+        </a>
+        <a href="#page-obs-v-clinica" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >Clínica</div>
+        </a>
+        <a href="content/part3/content.html#page-3" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >Diagnóstico/seguimiento</div>
+        </a>
+        <a href="#page-obs-v-tratamiento" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >Tratamiento</div>
+        </a>
+    </div>  <div data-role="footer" data-position="fixed" data-id="fixed" data-theme="c"> <div class="ui-grid-solo"  > <a data-rel="back" data-role="button" data-icon="arrow-l" data-iconpos="left" data-theme="c" data-mini="true" >Atrás</a> </div> </div>
+</div>
+
+<div data-role="page" id="page-obs-v-clinica" >
+    <div data-role="header" data-position="fixed" data-id="fixed" data-theme="c"> <a href="#page-home-directores" data-icon="home" data-iconpos="notext" data-theme="b"></a> <div class="center-wrapper"> <img class="logo1" src="img/logo.png" alt="Header" />  <img class="logo2" src="img/logo2.png" alt="Header" />  </div>  </div>
+    <div class="title" data-id="fixed">Clínica</div>
+    <div data-role="content"> <fieldset class="ui-grid-a">  <div class="ui-block-a"> <a href="#" data-role="button" class="ui-btn-down-c" data-theme="b" data-mini="true">Patologías</a>  </div>  <div class="ui-block-b"> <a href="#page-home-directores" data-role="button" data-theme="b" data-mini="true">Directores Científicos</a> </div> </fieldset>
+
+        <a href="#page-obs-v-clinica-edema" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >Edema Macular</div>
+        </a>
+        <a href="content/part3/content.html#page-4" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >Neovascularización</div>
+        </a>
+
+    </div>  <div data-role="footer" data-position="fixed" data-id="fixed" data-theme="c"> <div class="ui-grid-solo"  > <a data-rel="back" data-role="button" data-icon="arrow-l" data-iconpos="left" data-theme="c" data-mini="true" >Atrás</a> </div> </div>
+</div>
+
+
+<div data-role="page" id="page-obs-v-clinica-edema" >
+    <div data-role="header" data-position="fixed" data-id="fixed" data-theme="c"> <a href="#page-home-directores" data-icon="home" data-iconpos="notext" data-theme="b"></a> <div class="center-wrapper"> <img class="logo1" src="img/logo.png" alt="Header" />  <img class="logo2" src="img/logo2.png" alt="Header" />  </div>  </div>
+    <div class="title" data-id="fixed">Edema Macular</div>
+    <div data-role="content"> <fieldset class="ui-grid-a">  <div class="ui-block-a"> <a href="#" data-role="button" class="ui-btn-down-c" data-theme="b" data-mini="true">Patologías</a>  </div>  <div class="ui-block-b"> <a href="#page-home-directores" data-role="button" data-theme="b" data-mini="true">Directores Científicos</a> </div> </fieldset>
+
+        <a href="content/part3/content.html#page-13" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >Introducción</div>
+        </a>
+        <a href="content/part3/content.html#page-5" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >Edema macular no isquémico</div>
+        </a>
+        <a href="content/part3/content.html#page-6" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >Edema macular isquémico</div>
+        </a>
+        <a href="content/part3/content.html#page-12" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >OVCR indeterminada</div>
+        </a>
+
+
+    </div>  <div data-role="footer" data-position="fixed" data-id="fixed" data-theme="c"> <div class="ui-grid-solo"  > <a data-rel="back" data-role="button" data-icon="arrow-l" data-iconpos="left" data-theme="c" data-mini="true" >Atrás</a> </div> </div>
+</div>
+
+
+
+
+<div data-role="page" id="page-obs-v-tratamiento" >
+    <div data-role="header" data-position="fixed" data-id="fixed" data-theme="c"> <a href="#page-home-directores" data-icon="home" data-iconpos="notext" data-theme="b"></a> <div class="center-wrapper"> <img class="logo1" src="img/logo.png" alt="Header" />  <img class="logo2" src="img/logo2.png" alt="Header" />  </div>  </div>
+    <div class="title" data-id="fixed">Tratamiento</div>
+    <div data-role="content"> <fieldset class="ui-grid-a">  <div class="ui-block-a"> <a href="#" data-role="button" class="ui-btn-down-c" data-theme="b" data-mini="true">Patologías</a>  </div>  <div class="ui-block-b"> <a href="#page-home-directores" data-role="button" data-theme="b" data-mini="true">Directores Científicos</a> </div> </fieldset>
+
+        <div class="ui-body ui-body-d" style="margin-top:5px;text-align: left;" >
+            <b>MODALIDADES TERAPÉUTICAS</b><br>
+            Las distintas modalidades terapéuticas validadas por estudios controlados son:
+        </div>
+        <a href="content/part3/content.html#page-7" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >OVCR con Neovascularización (CVOS)</div>
+        </a>
+        <a href="#page-obs-v-tratamiento-edema" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >OVCR no isquémica con edema macular. Tratamiento farmacológico </div>
+        </a>
+        <a href="content/part3/content.html#page-8" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >Tratamiento Quirúrgico</div>
+        </a>
+
+    </div>  <div data-role="footer" data-position="fixed" data-id="fixed" data-theme="c"> <div class="ui-grid-solo"  > <a data-rel="back" data-role="button" data-icon="arrow-l" data-iconpos="left" data-theme="c" data-mini="true" >Atrás</a> </div> </div>
+</div>
+
+
+<div data-role="page" id="page-obs-v-tratamiento-edema" >
+    <div data-role="header" data-position="fixed" data-id="fixed" data-theme="c"> <a href="#page-home-directores" data-icon="home" data-iconpos="notext" data-theme="b"></a> <div class="center-wrapper"> <img class="logo1" src="img/logo.png" alt="Header" />  <img class="logo2" src="img/logo2.png" alt="Header" />  </div>  </div>
+    <div class="title" data-id="fixed">OVCR no isquémica con edema macular. Tratamiento farmacológico</div>
+    <div data-role="content"> <fieldset class="ui-grid-a">  <div class="ui-block-a"> <a href="#" data-role="button" class="ui-btn-down-c" data-theme="b" data-mini="true">Patologías</a>  </div>  <div class="ui-block-b"> <a href="#page-home-directores" data-role="button" data-theme="b" data-mini="true">Directores Científicos</a> </div> </fieldset>
+
+        <a href="content/part3/content.html#page-14" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >Introducción</div>
+        </a>
+        <a href="content/part3/content.html#page-9" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >Tratamiento con anti VEGF (Ranibizumab- CRUISE)</div>
+        </a>
+        <a href="content/part3/content.html#page-10" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >Tratamiento con corticoides</div>
+        </a>
+        <a href="content/part3/content.html#page-11" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >Combinación Ranibizumab-corticoide</div>
+        </a>
+
+    </div>  <div data-role="footer" data-position="fixed" data-id="fixed" data-theme="c"> <div class="ui-grid-solo"  > <a data-rel="back" data-role="button" data-icon="arrow-l" data-iconpos="left" data-theme="c" data-mini="true" >Atrás</a> </div> </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- DESDE AQUI LA PARTE 2 -->
+
+<!--
+A.	DEGENERACIÓN MACULAR ASOCIADA A LA EDAD ATRÓFICA
+    1.	Drusas blandas
+    2.	Drusas blandas con fluido subretiniano e intrarretiniano
+    3.	Drusas reticulares o depósitos drusenoides subretinianos
+    4.	Atrofia geográfica del epitelio pigmentario de la retina
+    5.	Diagnóstico diferencial
+        a.	Lesiones viteliformes adquiridas
+        b.	Epiteliopatía paquicoroidea paquipigmentaria
+
+B.	DEGENERACIÓN MACULAR ASOCIADA A LA EDAD NEOVASCULAR
+    1.	Neovascularización coroidea de tipo 1
+    2.	Neovascularización coroidea de tipo 2
+    3.	Neovascularización coroidea de tipo 3 (proliferación angiomatosa retiniana)
+    4.	Neovascularización coroidea mixta
+    5.	Diagnóstico diferencial
+        a.	Neovasculopatía paquicoroidea
+        b.	Coroidopatía serosa central
+        c.	Tubulaciones de retina externa y pseudoquistes retinianos
+        d.	Desprendimiento drusenoide del epitelio pigmentario de la retina
+        e.	Fluido submacular asociado a estafiloma inferior y papila oblicua
+
+-->
+
+
+<div data-role="page" id="page-deg" >
+    <div data-role="header" data-position="fixed" data-id="fixed" data-theme="c"> <a href="#page-home-directores" data-icon="home" data-iconpos="notext" data-theme="b"></a> <div class="center-wrapper"> <img class="logo1" src="img/logo.png" alt="Header" />  <img class="logo2" src="img/logo2.png" alt="Header" />  </div>  </div>
+    <div class="title" data-id="fixed">Degeneración macular asociada a la edad</div>
+    <div data-role="content"> <fieldset class="ui-grid-a">  <div class="ui-block-a"> <a href="#" data-role="button" class="ui-btn-down-c" data-theme="b" data-mini="true">Patologías</a>  </div>  <div class="ui-block-b"> <a href="#page-home-directores" data-role="button" data-theme="b" data-mini="true">Directores Científicos</a> </div> </fieldset>
+
+        <a href="#page-deg-a" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >DEGENERACIÓN MACULAR ASOCIADA A LA EDAD ATRÓFICA</div>
+        </a>
+        <a href="#page-deg-b" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >DEGENERACIÓN MACULAR ASOCIADA A LA EDAD NEOVASCULAR</div>
+        </a>
+
+    </div>  <div data-role="footer" data-position="fixed" data-id="fixed" data-theme="c"> <div class="ui-grid-solo"  > <a data-rel="back" data-role="button" data-icon="arrow-l" data-iconpos="left" data-theme="c" data-mini="true" >Atrás</a> </div> </div>
+</div>
+
+<div data-role="page" id="page-deg-a" >
+    <div data-role="header" data-position="fixed" data-id="fixed" data-theme="c"> <a href="#page-home-directores" data-icon="home" data-iconpos="notext" data-theme="b"></a> <div class="center-wrapper"> <img class="logo1" src="img/logo.png" alt="Header" />  <img class="logo2" src="img/logo2.png" alt="Header" />  </div>  </div>
+    <div class="title" data-id="fixed">DEGENERACIÓN MACULAR ASOCIADA A LA EDAD ATRÓFICA</div>
+    <div data-role="content"> <fieldset class="ui-grid-a">  <div class="ui-block-a"> <a href="#" data-role="button" class="ui-btn-down-c" data-theme="b" data-mini="true">Patologías</a>  </div>  <div class="ui-block-b"> <a href="#page-home-directores" data-role="button" data-theme="b" data-mini="true">Directores Científicos</a> </div> </fieldset>
+
+        <a href="content/part2/content.html#page-1" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >Drusas blandas</div>
+        </a>
+        <a href="content/part2/content.html#page-2" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >Drusas blandas con fluido subretiniano e intrarretiniano</div>
+        </a>
+        <a href="content/part2/content.html#page-3" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >Drusas reticulares o depósitos drusenoides subretinianos</div>
+        </a>
+        <a href="content/part2/content.html#page-4" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >Atrofia geográfica del epitelio pigmentario de la retina</div>
+        </a>
+        <a href="#page-deg-a-5" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >Diagnóstico diferencial</div>
+        </a>
+    </div>  <div data-role="footer" data-position="fixed" data-id="fixed" data-theme="c"> <div class="ui-grid-solo"  > <a data-rel="back" data-role="button" data-icon="arrow-l" data-iconpos="left" data-theme="c" data-mini="true" >Atrás</a> </div> </div>
+</div>
+
+
+<div data-role="page" id="page-deg-a-5" >
+    <div data-role="header" data-position="fixed" data-id="fixed" data-theme="c"> <a href="#page-home-directores" data-icon="home" data-iconpos="notext" data-theme="b"></a> <div class="center-wrapper"> <img class="logo1" src="img/logo.png" alt="Header" />  <img class="logo2" src="img/logo2.png" alt="Header" />  </div>  </div>
+    <div class="title" data-id="fixed">Diagnóstico diferencial</div>
+    <div data-role="content"> <fieldset class="ui-grid-a">  <div class="ui-block-a"> <a href="#" data-role="button" class="ui-btn-down-c" data-theme="b" data-mini="true">Patologías</a>  </div>  <div class="ui-block-b"> <a href="#page-home-directores" data-role="button" data-theme="b" data-mini="true">Directores Científicos</a> </div> </fieldset>
+
+        <a href="content/part2/content.html#page-5" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >Lesiones viteliformes adquiridas</div>
+        </a>
+        <a href="content/part2/content.html#page-6" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >Epiteliopatía paquicoroidea paquipigmentaria</div>
+        </a>
+
+    </div>  <div data-role="footer" data-position="fixed" data-id="fixed" data-theme="c"> <div class="ui-grid-solo"  > <a data-rel="back" data-role="button" data-icon="arrow-l" data-iconpos="left" data-theme="c" data-mini="true" >Atrás</a> </div> </div>
+</div>
+
+<div data-role="page" id="page-deg-b" >
+    <div data-role="header" data-position="fixed" data-id="fixed" data-theme="c"> <a href="#page-home-directores" data-icon="home" data-iconpos="notext" data-theme="b"></a> <div class="center-wrapper"> <img class="logo1" src="img/logo.png" alt="Header" />  <img class="logo2" src="img/logo2.png" alt="Header" />  </div>  </div>
+    <div class="title" data-id="fixed">DEGENERACIÓN MACULAR ASOCIADA A LA EDAD NEOVASCULAR</div>
+    <div data-role="content"> <fieldset class="ui-grid-a">  <div class="ui-block-a"> <a href="#" data-role="button" class="ui-btn-down-c" data-theme="b" data-mini="true">Patologías</a>  </div>  <div class="ui-block-b"> <a href="#page-home-directores" data-role="button" data-theme="b" data-mini="true">Directores Científicos</a> </div> </fieldset>
+
+        <a href="content/part2/content.html#page-7" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >Neovascularización coroidea de tipo 1</div>
+        </a>
+        <a href="content/part2/content.html#page-8" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >Neovascularización coroidea de tipo 2</div>
+        </a>
+        <a href="content/part2/content.html#page-9" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >Neovascularización coroidea de tipo 3<br/>(proliferación angiomatosa retiniana)</div>
+        </a>
+        <a href="content/part2/content.html#page-10" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >Neovascularización coroidea mixta</div>
+        </a>
+        <a href="#page-deg-b-5" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >Diagnóstico diferencial</div>
+        </a>
+    </div>  <div data-role="footer" data-position="fixed" data-id="fixed" data-theme="c"> <div class="ui-grid-solo"  > <a data-rel="back" data-role="button" data-icon="arrow-l" data-iconpos="left" data-theme="c" data-mini="true" >Atrás</a> </div> </div>
+</div>
+
+<div data-role="page" id="page-deg-b-5" >
+    <div data-role="header" data-position="fixed" data-id="fixed" data-theme="c"> <a href="#page-home-directores" data-icon="home" data-iconpos="notext" data-theme="b"></a> <div class="center-wrapper"> <img class="logo1" src="img/logo.png" alt="Header" />  <img class="logo2" src="img/logo2.png" alt="Header" />  </div>  </div>
+    <div class="title" data-id="fixed">Diagnóstico diferencial</div>
+    <div data-role="content"> <fieldset class="ui-grid-a">  <div class="ui-block-a"> <a href="#" data-role="button" class="ui-btn-down-c" data-theme="b" data-mini="true">Patologías</a>  </div>  <div class="ui-block-b"> <a href="#page-home-directores" data-role="button" data-theme="b" data-mini="true">Directores Científicos</a> </div> </fieldset>
+
+        <a href="content/part2/content.html#page-11" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >Neovasculopatía paquicoroidea</div>
+        </a>
+        <a href="content/part2/content.html#page-12" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >Coroidopatía serosa central</div>
+        </a>
+        <a href="content/part2/content.html#page-13" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >Tubulaciones de retina externa y pseudoquistes retinianos</div>
+        </a>
+        <a href="content/part2/content.html#page-14" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >Desprendimiento drusenoide del epitelio pigmentario de la retina</div>
+        </a>
+        <a href="content/part2/content.html#page-15" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+            <div class="title-collapsible-1" >Fluido submacular asociado a estafiloma inferior y papila oblicua</div>
+        </a>
+
+    </div>  <div data-role="footer" data-position="fixed" data-id="fixed" data-theme="c"> <div class="ui-grid-solo"  > <a data-rel="back" data-role="button" data-icon="arrow-l" data-iconpos="left" data-theme="c" data-mini="true" >Atrás</a> </div> </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- PARTE 1 -->
+
+
+<div data-role="page" id="page-home-patologias-1" >
+    <div data-role="header" data-position="fixed" data-id="fixed" data-theme="c"> <a href="#page-home-directores" data-icon="home" data-iconpos="notext" data-theme="b"></a> <div class="center-wrapper"> <img class="logo1" src="img/logo.png" alt="Header" />  <img class="logo2" src="img/logo2.png" alt="Header" />  </div>  </div>
+    <div class="title" data-id="fixed">Retinopatía diabética</div>
+    <div data-role="content"> <fieldset class="ui-grid-a">  <div class="ui-block-a"> <a href="#" data-role="button" class="ui-btn-down-c" data-theme="b" data-mini="true">Patologías</a>  </div>  <div class="ui-block-b"> <a href="#page-home-directores" data-role="button" data-theme="b" data-mini="true">Directores Científicos</a> </div> </fieldset>
+
+    <a href="content/part1/introduccion.html" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+        <div class="title-collapsible-1" >Introducción</div>
+    </a>
+    <a href="#page-home-patologias-2" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+        <div class="title-collapsible-1" >Clasificación de la Retinopatía diabética</div>
+    </a>
+    <a href="#page-home-patologias-4" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+        <div class="title-collapsible-1" >Clasificación del Edema macular diabético</div>
+    </a>
+    <a href="#page-home-patologias-7" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+        <div class="title-collapsible-1" >Clasificación basada en la tracción de la interfase</div>
+    </a>
+
+</div>  <div data-role="footer" data-position="fixed" data-id="fixed" data-theme="c"> <div class="ui-grid-solo"  > <a data-rel="back" data-role="button" data-icon="arrow-l" data-iconpos="left" data-theme="c" data-mini="true" >Atrás</a> </div> </div>
+</div>
+
+
+
+<div data-role="page" id="page-home-patologias-2" >
+    <div data-role="header" data-position="fixed" data-id="fixed" data-theme="c"> <a href="#page-home-directores" data-icon="home" data-iconpos="notext" data-theme="b"></a> <div class="center-wrapper"> <img class="logo1" src="img/logo.png" alt="Header" />  <img class="logo2" src="img/logo2.png" alt="Header" />  </div>  </div>
+    <div class="title" data-id="fixed">Clasificación de la Retinopatía diabética</div>
+    <div data-role="content"> <fieldset class="ui-grid-a">  <div class="ui-block-a"> <a href="#" data-role="button" class="ui-btn-down-c" data-theme="b" data-mini="true">Patologías</a>  </div>  <div class="ui-block-b"> <a href="#page-home-directores" data-role="button" data-theme="b" data-mini="true">Directores Científicos</a> </div> </fieldset>
+
+        <a href="#page-home-patologias-3" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+        <div class="title-collapsible-1" >Clasificación Clínica Internacional: Global Diabetic Retinopathy Project Group (GDRPG)</div>
+    </a>
+    <!--<a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+        <div class="title-collapsible-1" >Actitud Médico-Quirúrgica por estadío (desarrollada en los casos clínicos)</div>
+    </a>-->
+
+    </div>  <div data-role="footer" data-position="fixed" data-id="fixed" data-theme="c"> <div class="ui-grid-solo"  > <a data-rel="back" data-role="button" data-icon="arrow-l" data-iconpos="left" data-theme="c" data-mini="true" >Atrás</a> </div> </div>
+</div>
+
+
+<div data-role="page" id="page-home-patologias-3" >
+    <div data-role="header" data-position="fixed" data-id="fixed" data-theme="c"> <a href="#page-home-directores" data-icon="home" data-iconpos="notext" data-theme="b"></a> <div class="center-wrapper"> <img class="logo1" src="img/logo.png" alt="Header" />  <img class="logo2" src="img/logo2.png" alt="Header" />  </div>   </div>
+    <div class="title" data-id="fixed">Clasificación Clínica Internacional: Global Diabetic Retinopathy Project Group (GDRPG)</div>
+    <div data-role="content"> <fieldset class="ui-grid-a">  <div class="ui-block-a"> <a href="#" data-role="button" class="ui-btn-down-c" data-theme="b" data-mini="true">Patologías</a>  </div>  <div class="ui-block-b"> <a href="#page-home-directores" data-role="button" data-theme="b" data-mini="true">Directores Científicos</a> </div> </fieldset>
+
+
+    <div data-role="collapsible" data-theme="c" data-content-theme="c">
+        <h3><div class="title-collapsible-1">Sin RD aparente</div></h3>
+        <a href="content/part1/retinopatia_diabetica.html#page-1"  rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b" >
+            <div class="title-collapsible-2" >Ausencia de microaneurismas (&#181;A)</div>
+        </a>
+    </div>
+    <div data-role="collapsible" data-theme="c" data-content-theme="c">
+        <h3><div class="title-collapsible-1">RD no proliferativa (RDNP) Leve</div></h3>
+        <a href="content/part1/retinopatia_diabetica.html#page-2"  rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b" >
+            <div class="title-collapsible-2" >Sólo &#181;A</div>
+        </a>
+    </div>
+    <div data-role="collapsible" data-theme="c" data-content-theme="c">
+        <h3><div class="title-collapsible-1">RDNP Moderada</div></h3>
+        <a href="content/part1/retinopatia_diabetica.html#page-3"  rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b" >
+            <div class="title-collapsible-2" >&#181;A asociado a menos de 20 hemorragias (H) intrarretinianas en cada uno de los 4 cuadrantes (C), exudados duros (ED), "exudados" algo donosos (EA), arrosamiento venoso (AV) en 1 sólo C.</div>
+        </a>
+    </div>
+    <div data-role="collapsible" data-theme="c" data-content-theme="c">
+        <h3><div class="title-collapsible-1">RDNP Severa</div></h3>
+        <a href="content/part1/retinopatia_diabetica.html#page-4"  rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b" >
+            <div class="title-collapsible-2" >&#181;A junto a uno de los siguientes hallazgos:<br/>Hemorragias intrarretinianas severas(>20) en cada uno de los 4 C<br/>Arrosariamiento venoso en &ge; 2C<br/>Anomalías microvasculares intrarretinianas (AMIR) en &ge; 1C</div>
+        </a>
+    </div>
+    <div data-role="collapsible" data-theme="c" data-content-theme="c">
+        <h3><div class="title-collapsible-1">RDNP Muy severa</div></h3>
+        <a href="content/part1/retinopatia_diabetica.html#page-5"  rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b" >
+            <div class="title-collapsible-2" >&#181;A junto al menos dos de los hallazgos anteriores</div>
+        </a>
+    </div>
+    <div data-role="collapsible" data-theme="c" data-content-theme="c">
+        <h3><div class="title-collapsible-1">RDP</div></h3>
+        <a href="content/part1/retinopatia_diabetica.html#page-6"  rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b" >
+            <div class="title-collapsible-2" >Neovasos (NV) y/o hemorragia prerretiniana o hemovítreo</div>
+        </a>
+    </div>
+
+
+
+    </div>  <div data-role="footer" data-position="fixed" data-id="fixed" data-theme="c"> <div class="ui-grid-solo"  > <a data-rel="back" data-role="button" data-icon="arrow-l" data-iconpos="left" data-theme="c" data-mini="true" >Atrás</a> </div> </div>
+</div>
+
+
+
+<div data-role="page" id="page-home-patologias-4" >
+    <div data-role="header" data-position="fixed" data-id="fixed" data-theme="c"> <a href="#page-home-directores" data-icon="home" data-iconpos="notext" data-theme="b"></a> <div class="center-wrapper"> <img class="logo1" src="img/logo.png" alt="Header" />  <img class="logo2" src="img/logo2.png" alt="Header" />  </div>   </div>
+    <div class="title" data-id="fixed">Clasificación del Edema macular diabético</div>
+    <div data-role="content"> <fieldset class="ui-grid-a">  <div class="ui-block-a"> <a href="#" data-role="button" class="ui-btn-down-c" data-theme="b" data-mini="true">Patologías</a>  </div>  <div class="ui-block-b"> <a href="#page-home-directores" data-role="button" data-theme="b" data-mini="true">Directores Científicos</a> </div> </fieldset>
+
+
+
+    <a href="#page-home-patologias-5" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+        <div class="title-collapsible-1" >Clasificación angiográfica</div>
+    </a>
+    <a href="#page-home-patologias-6" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+        <div class="title-collapsible-1" >Clasificación tomográfica</div>
+    </a>
+    <!--<a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+        <div class="title-collapsible-1" >Actitud Médico-Quirúrgica por estadío (desarrollada en los casos clínicos)</div>
+    </a>-->
+
+    </div>  <div data-role="footer" data-position="fixed" data-id="fixed" data-theme="c"> <div class="ui-grid-solo"  > <a data-rel="back" data-role="button" data-icon="arrow-l" data-iconpos="left" data-theme="c" data-mini="true" >Atrás</a> </div> </div>
+</div>
+
+<div data-role="page" id="page-home-patologias-5" >
+    <div data-role="header" data-position="fixed" data-id="fixed" data-theme="c"> <a href="#page-home-directores" data-icon="home" data-iconpos="notext" data-theme="b"></a> <div class="center-wrapper"> <img class="logo1" src="img/logo.png" alt="Header" />  <img class="logo2" src="img/logo2.png" alt="Header" />  </div>   </div>
+    <div class="title" data-id="fixed">Clasificación angiográfica</div>
+    <div data-role="content"> <fieldset class="ui-grid-a">  <div class="ui-block-a"> <a href="#" data-role="button" class="ui-btn-down-c" data-theme="b" data-mini="true">Patologías</a>  </div>  <div class="ui-block-b"> <a href="#page-home-directores" data-role="button" data-theme="b" data-mini="true">Directores Científicos</a> </div> </fieldset>
+
+    <a href="content/part1/emd_angiografica.html#page-1" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+        <div class="title-collapsible-1" >Introducción</div>
+    </a>
+
+
+    <div data-role="collapsible" data-theme="c" data-content-theme="c">
+        <h3><div class="title-collapsible-1">Focal</div></h3>
+        <a href="content/part1/emd_angiografica.html#page-2"  rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b" >
+            <div class="title-collapsible-2" >
+                Bien definido<br/>
+                Anillo circinado<br/>
+                Asociado a micros<br/>
+            </div>
+        </a>
+    </div>
+    <div data-role="collapsible" data-theme="c" data-content-theme="c">
+        <h3><div class="title-collapsible-1">Multifocal</div></h3>
+        <a href="content/part1/emd_angiografica.html#page-3"  rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b" >
+            <div class="title-collapsible-2" >
+                Varias áreas clasificables como focal
+            </div>
+        </a>
+    </div>
+    <div data-role="collapsible" data-theme="c" data-content-theme="c">
+        <h3><div class="title-collapsible-1">Difuso</div></h3>
+        <a href="content/part1/emd_angiografica.html#page-4"  rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b" >
+            <div class="title-collapsible-2" >
+                Hipertrofia tardía<br/>
+                Mínima asociación a micros<br/>
+                Pocos exudados duros<br/>
+            </div>
+        </a>
+    </div>
+
+    <div data-role="collapsible" data-theme="c" data-content-theme="c">
+        <h3><div class="title-collapsible-1">Mixto</div></h3>
+        <a href=""  rel="external" data-role="button" data-theme="b" >
+            <div class="title-collapsible-2" >
+                Coexistencia de varias formas
+            </div>
+        </a>
+    </div>
+
+
+    </div>  <div data-role="footer" data-position="fixed" data-id="fixed" data-theme="c"> <div class="ui-grid-solo"  > <a data-rel="back" data-role="button" data-icon="arrow-l" data-iconpos="left" data-theme="c" data-mini="true" >Atrás</a> </div> </div>
+</div>
+
+<div data-role="page" id="page-home-patologias-6" >
+    <div data-role="header" data-position="fixed" data-id="fixed" data-theme="c"> <a href="#page-home-directores" data-icon="home" data-iconpos="notext" data-theme="b"></a> <div class="center-wrapper"> <img class="logo1" src="img/logo.png" alt="Header" />  <img class="logo2" src="img/logo2.png" alt="Header" />  </div>   </div>
+    <div class="title" data-id="fixed">Clasificación tomográfica</div>
+    <div data-role="content"> <fieldset class="ui-grid-a">  <div class="ui-block-a"> <a href="#" data-role="button" class="ui-btn-down-c" data-theme="b" data-mini="true">Patologías</a>  </div>  <div class="ui-block-b"> <a href="#page-home-directores" data-role="button" data-theme="b" data-mini="true">Directores Científicos</a> </div> </fieldset>
+
+    <a href="content/part1/emd_tomografica.html#page-1" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+        <div class="title-collapsible-1" >Introducción</div>
+    </a>
+    <div data-role="collapsible" data-theme="c" data-content-theme="c">
+        <h3><div class="title-collapsible-1">E1</div></h3>
+        <a href="content/part1/emd_tomografica.html#page-2"  rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b" >
+            <div class="title-collapsible-2" >
+                Engrosamiento espongiforme<br/>
+                No espacios cistoides<br/>
+                Más en capas externas<br/>
+            </div>
+        </a>
+    </div>
+    <div data-role="collapsible" data-theme="c" data-content-theme="c">
+        <h3><div class="title-collapsible-1">E2</div></h3>
+        <a href="content/part1/emd_tomografica.html#page-3"  rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b" >
+            <div class="title-collapsible-2" >
+                Engrosamiento cistoide<br/>
+                A-C De pequeños quistes a coalescencia
+            </div>
+        </a>
+    </div>
+    <div data-role="collapsible" data-theme="c" data-content-theme="c">
+        <h3><div class="title-collapsible-1">E3</div></h3>
+        <a href="content/part1/emd_tomografica.html#page-4"  rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b" >
+            <div class="title-collapsible-2" >
+                Desprendimiento de neuroepitelio<br/>
+                Independiente de otros hallazgos
+            </div>
+        </a>
+    </div>
+
+    <a href="content/part1/emd_tomografica.html#page-5" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+        <div class="title-collapsible-1" >Tratamiento del Edema Macular diabético</div>
+    </a>
+
+
+    </div>  <div data-role="footer" data-position="fixed" data-id="fixed" data-theme="c"> <div class="ui-grid-solo"  > <a data-rel="back" data-role="button" data-icon="arrow-l" data-iconpos="left" data-theme="c" data-mini="true" >Atrás</a> </div> </div>
+</div>
+
+<div data-role="page" id="page-home-patologias-7" >
+    <div data-role="header" data-position="fixed" data-id="fixed" data-theme="c"> <a href="#page-home-directores" data-icon="home" data-iconpos="notext" data-theme="b"></a> <div class="center-wrapper"> <img class="logo1" src="img/logo.png" alt="Header" />  <img class="logo2" src="img/logo2.png" alt="Header" />  </div>   </div>
+    <div class="title" data-id="fixed">Clasificación basada en la tracción de la interfase</div>
+    <div data-role="content"> <fieldset class="ui-grid-a">  <div class="ui-block-a"> <a href="#" data-role="button" class="ui-btn-down-c" data-theme="b" data-mini="true">Patologías</a>  </div>  <div class="ui-block-b"> <a href="#page-home-directores" data-role="button" data-theme="b" data-mini="true">Directores Científicos</a> </div> </fieldset>
+
+        <div data-role="collapsible" data-theme="c" data-content-theme="c">
+            <h3><div class="title-collapsible-1">T0</div></h3>
+            <a href="content/part1/traccion_interface.html#page-1"  rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b" >
+                <div class="title-collapsible-2" >
+                    No línea hiperreflectante
+                </div>
+            </a>
+        </div>
+        <div data-role="collapsible" data-theme="c" data-content-theme="c">
+            <h3><div class="title-collapsible-1">T1</div></h3>
+            <a href="content/part1/traccion_interface.html#page-2"  rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b" >
+                <div class="title-collapsible-2" >
+                    Existe línea pero sin distorsión
+                </div>
+            </a>
+        </div>
+        <div data-role="collapsible" data-theme="c" data-content-theme="c">
+            <h3><div class="title-collapsible-1">T2</div></h3>
+            <a href="content/part1/traccion_interface.html#page-3"  rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b" >
+                <div class="title-collapsible-2" >
+                    Múltiples puntos de tracción<br/>
+                    Distorsión de la retina
+                </div>
+            </a>
+        </div>
+        <div data-role="collapsible" data-theme="c" data-content-theme="c">
+            <h3><div class="title-collapsible-1">T3</div></h3>
+            <a href="content/part1/traccion_interface.html#page-4"  rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b" >
+                <div class="title-collapsible-2" >
+                    Tracción anteroposterior<br/>
+                    "Alas de gaviota"
+                </div>
+            </a>
+        </div>
+
+
+    <a href="content/part1/traccion_interface.html#page-5" rel="external"  data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c" >
+        <div class="title-collapsible-1" >Tratamiento</div>
+    </a>
+
+    </div>  <div data-role="footer" data-position="fixed" data-id="fixed" data-theme="c"> <div class="ui-grid-solo"  > <a data-rel="back" data-role="button" data-icon="arrow-l" data-iconpos="left" data-theme="c" data-mini="true" >Atrás</a> </div> </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div data-role="page" id="page-concurso" >
+    <div data-role="header" data-position="fixed" data-id="fixed" data-theme="c"> <a href="#page-home-directores" data-icon="home" data-iconpos="notext" data-theme="b"></a> <div class="center-wrapper"> <img class="logo1" src="img/logo.png" alt="Header" />  <img class="logo2" src="img/logo2.png" alt="Header" />  </div>   </div>
+    <div class="title" data-id="fixed">Acaba de acceder a la categoría de concurso.</div>
+
+
+    <div data-role="content">
+        Entre todas las imágenes recibidas, el jurado compuesto por el Dr. Donate, el Dr. Gallego y el Dr. López, seleccionará aquellas que serán publicadas en la "Revista Española de Patología Macular", una publicación de referencia para los retinólogos, avalada por la SERV (Sociedad Española de Retina y Vitrio). Se trata de una revista cuatrimestral, con un número especial que se lleva al congreso. Cuenta con una tirada de 2000 ejemplares.
+        <br/><br/>
+        Dicho jurado elegirá y publicará un caso por número de revista en la nueva sección “Concurso Novartis a la mejor imagen”.
+        <br/><br/>
+        Para ello debe enviar una imagen con su pie de foto a una de las tres categorías de la aplicación.
+        <br/><br/>
+        <div data-role="controlgroup" class="concurso-botones">
+            <a href="mailto:jdonate@med.mira-soluciones.com?subject=Concurso"  data-role="button"  data-theme="b">Retinopatía diabética</a>
+            <a href="mailto:rgallego@med.mira-soluciones.com?subject=Concurso" data-role="button"  data-theme="b">Degeneración macular asociada a la edad</a>
+            <a href="mailto:llguajardo@med.mira-soluciones.com?subject=Concurso" data-rel="popup"  data-role="button"  data-theme="b">Obstrucción de rama venosa en retina</a>
+        </div>
+    </div>
+
+    <div data-role="popup" id="popupBasic3" data-theme="e" data-overlay-theme="a">
+        <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+        <p>Sección operativa en la siguiente actualización</p>
+    </div>
+
+    <div data-role="footer" data-position="fixed" data-id="fixed" data-theme="c" >
+        <div class="ui-grid-solo">
+            <a href="#" data-rel="back" data-role="button" class="ui-btn-down-c" data-transition="slideup" data-theme="b" >Atrás</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div data-role="page" id="page-buscar" >
+    <div data-role="header" data-position="fixed" data-id="fixed" data-theme="c"> <a href="#page-home-directores" data-icon="home" data-iconpos="notext" data-theme="b"></a> <div class="center-wrapper"> <img class="logo1" src="img/logo.png" alt="Header" />  <img class="logo2" src="img/logo2.png" alt="Header" />  </div> </div>
+    <div class="title" data-id="fixed">Búsqueda de contenido</div>
+    <div data-role="content">
+        <ul data-role="listview" data-filter="true" data-filter-placeholder="Buscar...">
+            <li><a href="#">Retinopatía diabética</a></li>
+            <li><a href="#">Degeneración macular asociada a la edad</a></li>
+            <li><a href="#">Obstrucción de rama venosa en retina</a></li>
+        </ul>
+    </div>
+
+    <div data-role="footer" data-position="fixed" data-id="fixed" data-theme="c" >
+        <div class="ui-grid-solo">
+            <a href="#page-concurso" data-role="button" data-transition="slideup" data-theme="b" >CONCURSO ENVÍA TU CASO CLÍNICO</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>

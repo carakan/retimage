@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+    <title>Novartis</title>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, user-scalable=no "><!-- initial-scale=1-->
+
+    <script src="../../js/jquery-2.1.0.min.js"></script>
+    <script src="../../js/jqm/jquery.mobile-1.3.2.min.js"></script>
+    <script src="../../phonegap.js"></script>
+    <script src="../../js/jquery.panzoom.min.js"></script>
+    <script src="../../js/main.js"></script>
+
+
+    <link rel="stylesheet" href="../../js/jqm/jquery.mobile-1.3.2.min.css"/>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <!--<link rel="stylesheet" href="../../css/tpv.css" />-->
+
+    <script>
+      /*  document.addEventListener("deviceready", onDeviceReady, false);
+        // Cordova is ready
+        function onDeviceReady() {
+            downloadFile('http://www.html5cooks.com/novartis/part1/img/0.jpg','novartis','0.jpg');
+        }
+*/
+
+
+
+        /*function downloadFile(){
+            //alert(device.uuid)
+            window.requestFileSystem(
+                    LocalFileSystem.PERSISTENT, 0,
+                    function onFileSystemSuccess(fileSystem) {
+                        fileSystem.root.getFile(
+                                "dummy.html", {create: true, exclusive: false},
+                                function gotFileEntry(fileEntry){
+                                    var fileTransfer = new FileTransfer();
+                                    fileEntry.remove();
+                                    //alert('file: '+fileEntry.toURL())
+                                    fileTransfer.download(
+                                            encodeURI("http://www.html5cooks.com/novartis/part1/img/0.jpg"),
+                                            "cdvfile://localhost/persistent/0.jpg",
+                                            function(theFile) {
+                                                alert("download complete: " + theFile.toURI());
+                                                //window.location.href=theFile.toURI();
+                                                //showLink(theFile.toURI());
+                                            },
+                                            function(error) {
+                                                alert("download error source " + error.source);
+                                                //alert("download error target " + error.target);
+                                                //alert("download error code: " + error.code);
+                                            }
+                                    );
+                                },
+                                fail);
+                    },
+                    fail);
+        }
+
+        function fail(evt) {
+            alert('error: '+evt.target.error.code);
+        }*/
+
+
+
+
+
+
+
+        $(document).ready(function(){
+
+        })
+
+
+
+    </script>
+</head>
+
+<body >
+
+<div data-role="page" id="page-content" >
+    <div data-role="header" data-position="fixed" data-id="fixed" data-theme="c">
+        <a href="../../index.html" data-icon="home" data-iconpos="notext" data-theme="b"></a>
+        <div class="center-wrapper">
+            <img class="logo1" src="../../img/logo.png" alt="Header" />
+            <img class="logo2" src="../../img/logo2.png" alt="Header" />
+        </div>
+        <!--<a href="../../index.html#page-buscar" rel="external" data-icon="search" data-iconpos="notext" data-theme="b"></a>-->
+    </div>
+    <div class="title" data-id="fixed">Introducción</div>
+    <div data-role="content">
+
+        La retinopatía diabética (RD) es, a día de hoy, una de las causas de pérdida de visión más frecuente en nuestro medio, viéndose afectada por un lado por el incremento de expectativas de vida en los pacientes diabéticos y por otro por la mejora de los mecanismos de diagnóstico precoz. Todo esto permite que sobrevivan diabéticos más años y por lo tanto se presenten más complicaciones de la misma, como la retinopatía diabética, aunque el diagnóstico precoz ha hecho que se hayan reducido drásticamente las formas invalidantes de ésta.
+        El 5% de la población tiene alguna forma de diabetes mellitus y se estima que el 70% de éstos presenten retinopatía diabética en algún grado a partir de 15 años de evolución, sin embargo, estos números son mucho más favorables en el caso de los pacientes no insulino-dependientes (10-50%) frente a los insulino-dependientes (80-90%). El pronóstico visual de estos pacientes dependerá fundamentalmente de un diagnóstico precoz,  asociación a otras metabolopatías y factores de riesgo cardiovascular e inexcusablemente a un buen control de la glucemia.
+        <br/>
+        <br/>
+        <b class="title-p" >PATOGENIA</b>
+        <br/>
+        <br/>
+        La retinopatía diabética es una microangiopatía que lleva a la oclusión de arteriolas, capilares, vénulas y precapilares y alteraciones de la permeabilidad con extravasación de plasma, motivado por un engrosamiento progresivo de la membrana basal y proliferación de células endoteliales como respuesta a la isquemia retiniana generada.
+        El círculo básico sería: daño de la membrana basal, microoclusiones, extravasación, isquemia, edema, producción de sustancias vaso-activas, inflamación, vasoproliferación y neovascularización que puede llevar a hemorragia, organización de humor vítreo, desprendimiento de retina, glaucoma neovascular… y en medio de estos procesos podremos ver lesiones básicas como microaneurismas (signo de inicio de RD) anomalías vasculares intrarretinianas (AMIR).
+        <br/><br/>
+
+        <img src="http://s512730226.mialojamiento.es/nuevo/novartis/part1/img/0.jpg" class="mob-img" />
+        <br/><br/>
+        Apreciamos las imágenes puntiformes que corresponden a microaneurismas y las que son microhemorragias con bordes mal definidos que en realidad son vasos anormales que podemos encontrar en el 1/3 externo del parénquima retiniano y dejan escapar contenido hemático escaso.
+        <br/><br/>
+        <img src="http://s512730226.mialojamiento.es/nuevo/novartis/part1/img/0b.jpg" class="mob-img" />
+        <br/><br/>
+        En AFG podemos diferenciarlos porque el microaneurisma aparece como un punto hiperfluorescente, que puede difundir más o menos; en contra, los AMIR ofrecen un efecto pantalla, es decir, los vemos hipofluorescentes.
+        <br/><br/>
+    </div>
+    <div data-role="footer" data-position="fixed" data-id="fixed" data-theme="c" >
+        <div class="ui-grid-solo"> <a data-rel="back" data-role="button" data-icon="arrow-l" data-iconpos="left" data-theme="c" data-mini="true" >Atrás</a> </div>
+    </div>
+</div>
+
+<div data-role="page" id="img-viewer"  style=" position: relative;">
+
+    <img id="beatles" src="" width="450"/>
+
+    <div data-role="popup" id="popupBasic" data-theme="e" data-overlay-theme="a">
+        <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+        <p>Imagen guardada&nbsp;&nbsp;</p>
+    </div>
+
+    <div data-role="footer" data-position="fixed" data-id="fixed" data-theme="c" style="overflow:auto">
+
+        <fieldset class="ui-grid-a">
+            <div class="ui-block-a">
+                <a id="btn-back" data-rel="back" data-role="button" data-icon="arrow-l" data-iconpos="left" data-theme="c" data-mini="true" >Atrás</a>
+            </div>
+            <div class="ui-block-b">
+                <a id="btn-save" href="#" data-role="button" data-theme="b" data-mini="true">Guardar</a>
+            </div>
+        </fieldset>
+
+
+
+    </div>
+</div>
+
+
+</body>
+</html>
+
